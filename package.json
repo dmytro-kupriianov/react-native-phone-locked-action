@@ -1,7 +1,7 @@
 {
   "name": "react-native-phone-locked-action",
   "title": "React Native Phone Locked Action",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Detect event ACTION_USER_PRESENT || ACTION_SCREEN_OFF || ACTION_SCREEN_ON",
   "main": "index.js",
   "scripts": {

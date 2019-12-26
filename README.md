@@ -1,17 +1,29 @@
 # react-native-phone-locked-action
 
 ## Getting started
+`yarn add react-native-phone-locked-action`
+
+or
 
 `$ npm install react-native-phone-locked-action --save`
 
-### Mostly automatic installation
-
-`$ react-native link react-native-phone-locked-action`
-
 ## Usage
 ```javascript
-import PhoneLockedAction from 'react-native-phone-locked-action';
+import { NativeEventEmitter, NativeModules } from 'react-native';
+import PhoneLocked from 'react-native-phone-locked-action';
 
-// TODO: What to do with the module?
-PhoneLockedAction;
+const App: () => React$Node = () => {
+
+  const eventEmitter = new NativeEventEmitter(NativeModules.PhoneLocked);
+
+  eventEmitter.addListener('EventReminder', (res) => {
+    console.log(res.action); // ACTION_USER_PRESENT || ACTION_SCREEN_OFF || ACTION_SCREEN_ON
+  });
+
+  return (
+    <>
+
+    </>
+  );
+};
 ```
