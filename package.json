@@ -1,7 +1,7 @@
 {
   "name": "react-native-phone-locked-action",
   "title": "React Native Phone Locked Action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Detect event ACTION_USER_PRESENT || ACTION_SCREEN_OFF || ACTION_SCREEN_ON",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-phone-locked-action.git",
-    "baseUrl": "https://github.com/github_account/react-native-phone-locked-action"
+    "url": "git+https://github.com/dimonchik-com/react-native-phone-locked-action",
+    "baseUrl": "https://github.com/dimonchik-com/react-native-phone-locked-action"
   },
   "keywords": [
     "react-native"
